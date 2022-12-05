@@ -4,6 +4,7 @@
   </head>
   <body>
     <?php echo '<p>Hello World</p>'; ?> 
+<img src="https://preview.redd.it/l74ex2asp6v61.jpg?auto=webp&s=911136fa734b3c83ac53e57cf1160aa98ff7574f" class="img-rounded" alt="Cinque Terre">
 
     <!--
     This script places a badge on your repl's full-browser view back to your repl's cover
