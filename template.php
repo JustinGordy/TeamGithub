@@ -7,14 +7,14 @@
         <meta name="author" content="" />
         <title>Bare - Start Bootstrap Template</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/teamplateFiles/assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="/teamplateFiles/css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php'); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'].'/teamplateFiles/includes/header.php'); ?>
         </nav>
         <!-- Page content-->
         <div class="container">
@@ -27,6 +27,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="/teamplateFiles/js/scripts.js"></script>
     </body>
 </html>
