@@ -6,6 +6,7 @@
     <h1>index.php</h1>
     <p>Edited by Tyler</p>
     <a href="https://glogangworldwide.com/" target="_blank">
-    <img src="https://preview.redd.it/l74ex2asp6v61.jpg?auto=webp&s=911136fa734b3c83ac53e57cf1160aa98ff7574f" class="img-rounded" alt="Cinque Terre"> 
+    <img src="https://preview.redd.it/l74ex2asp6v61.jpg?auto=webp&s=911136fa734b3c83ac53e57cf1160aa98ff7574f" class="img-rounded" alt="Cinque Terre">
+    </a>
   </body>
 </html>
