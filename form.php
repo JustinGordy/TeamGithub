@@ -15,6 +15,9 @@
       
        <label for="email">Email:</label><br>
       <input type="text" id="email" name="email"><br>
+
+             <label for="number">Phone Number:</label><br>
+      <input type="text" id="number" name="number"><br>
       
       <label for="know">How You Know Person?</label><br>
       <select id="know" name="know">
