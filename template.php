@@ -14,7 +14,7 @@
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <?php include($_SERVER['DOCUMENT_ROOT'].'/templateFiles/includes/header.php'); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php'); ?>
         </nav>
         <!-- Page content-->
         <div class="container">
