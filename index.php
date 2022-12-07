@@ -1,8 +1,15 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>PHP Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php'); ?>
+    </nav>
     <h1>index.php</h1>
     <p>Edited by Tyler</p>
     <a href="https://glogangworldwide.com/" target="_blank">
