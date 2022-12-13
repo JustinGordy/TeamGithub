@@ -26,7 +26,11 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
                 <p class="lead"><?php 
               foreach ($json_encode as $data ) {
                 if($data['know']=="co-workers"){
-                  echo $data['know']."<br>";
+                  echo $data['fname']."<br>";
+                  echo $data['lname']."<br>";
+                  echo $data['email']."<br>";
+                  echo $data['number']."<br>";
+                  echo $data['know']."<br><hr>";
                 }
               }
                 ?>
