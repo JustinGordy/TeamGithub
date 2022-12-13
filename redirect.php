@@ -28,7 +28,7 @@ $formData = array(
     file_put_contents('data.json', $json_encode);
 
 
-header('Location: /form.php');
+header('Location: /index.php');
 
 
   
