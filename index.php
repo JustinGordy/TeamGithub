@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php 
+$jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
+$json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
+?>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -19,9 +22,45 @@
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.1.3</p>
+                <form action="/redirect.php" method="post">
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname"><br>
+                  
+                   <label for="email">Email:</label><br>
+                  <input type="text" id="email" name="email"><br>
+            
+                         <label for="number">Phone Number:</label><br>
+                  <input type="text" id="number" name="number"><br>
+                  
+                  <label for="know">How You Know Person?</label><br>
+                  <select id="know" name="know">
+                    <option value="friends">friends</option>
+                    <option value="family">family </option>
+                    <option value="co-worker">co-worker</option>
+                  </select>
+                  <br><br>
+                  
+                    <input type="submit" name="BTN_submit" value="Submit">
+              </form>
+              <?php
+                foreach ($json_encode as $data ) {
+                  echo $data['fname']."<br>";
+                  echo $data['lname']."<br>";
+                  echo $data['email']."<br>";
+                  echo $data['number']."<br>";
+                  echo $data['know']."<br><hr>";
+
+                }
+
+
+
+
+
+
+
+                ?>
             </div>
         </div>
         <!-- Bootstrap core JS-->
