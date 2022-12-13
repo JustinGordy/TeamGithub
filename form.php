@@ -1,6 +1,7 @@
 <?php 
 $jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
-$json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array?>
+$json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
+?>
 <html lang="en">
   <head>
     <meta charset="utf-8">

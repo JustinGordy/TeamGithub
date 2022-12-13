@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php 
+$jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
+$json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
+?>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -20,8 +23,14 @@
         <div class="container">
             <div class="text-center mt-5">
                 <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.1.3</p>
+                <p class="lead"><?php 
+              foreach ($json_encode as $data ) {
+                if($data['know']=="co-workers"){
+                  echo $data['know']."<br>";
+                }
+              }
+                ?>
+                </p>
             </div>
         </div>
         <!-- Bootstrap core JS-->
