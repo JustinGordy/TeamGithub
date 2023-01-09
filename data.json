@@ -47,5 +47,12 @@
         "email": "360135@guhsd.net",
         "number": "12344678",
         "know": "co-worker"
+    },
+    {
+        "fname": "bob",
+        "lname": "dog",
+        "email": "360135@guhsd.net",
+        "number": "12344678",
+        "know": "friends"
     }
 ]
