@@ -1,6 +1,8 @@
 <?php 
 $jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
 $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
+usort($json_encode, fn($a, $b) => $a['lname'] <=> $b['lname']);
+
 ?>
 <html lang="en">
     <head>
@@ -25,6 +27,8 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
                 <h1>A Bootstrap 5 Starter Template</h1>
                 <p class="lead"><?php 
               foreach ($json_encode as $data ) {
+
+                
                 if($data['know']=="family"){
                   echo $data['fname']."<br>";
                   echo $data['lname']."<br>";
