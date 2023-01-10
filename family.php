@@ -34,8 +34,7 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
                   echo $data['email']."<br>";
                   echo $data['number']."<br>";
                   echo $data['know']."<br>";
-                  echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><br><hr>';
-                  
+                  echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><br><hr>';                  
                 }
               }
                 ?>
@@ -54,11 +53,11 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
                   echo $data['lname']."<br>";
                   echo $data['email']."<br>";
                   echo $data['number']."<br>";
-                  echo $data['know']."<br><hr>";
+                  echo $data['know']."<br>";
+                  echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><hr>';
                 }
               }
                 ?>
-                  <a href="/form.php" class="btn btn-primary">Edit Info</a>
                 </div>
               </div>
             </div>
