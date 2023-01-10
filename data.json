@@ -28,20 +28,6 @@
         "know": "family"
     },
     {
-        "fname": "",
-        "lname": "",
-        "email": "",
-        "number": "",
-        "know": "friends"
-    },
-    {
-        "fname": "",
-        "lname": "",
-        "email": "",
-        "number": "",
-        "know": "friends"
-    },
-    {
         "fname": "John",
         "lname": "grrgr",
         "email": "360135@guhsd.net",
@@ -49,10 +35,25 @@
         "know": "co-worker"
     },
     {
-        "fname": "bob",
-        "lname": "dog",
-        "email": "360135@guhsd.net",
-        "number": "12344678",
+        "fname": "Justin",
+        "lname": "Gordy",
+        "email": "349760@guhsd.net",
+        "number": "6192018453",
+        "know": "co-worker"
+    },
+    {
+        "fname": "Justin",
+        "lname": "gordy",
+        "email": "",
+        "number": "",
+        "know": "friends"
+    },
+    {
+        "fname": "todd",
+        "lname": "benrud",
+        "email": "",
+        "number": "",
         "know": "friends"
     }
+  
 ]
