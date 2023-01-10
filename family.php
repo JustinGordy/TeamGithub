@@ -29,12 +29,10 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
                 <?php 
               foreach ($json_encode as $data ) {
                 if($data['know']=="family"){
-                  echo $data['fname']."<br>";
-                  
+                  echo $data['fname']."<br>";    
                   echo $data['lname']."<br>";
                   echo $data['email']."<br>";
                   echo $data['number']."<br>";
-                  
                   echo $data['know']."<br>";
                   echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><br><hr>';
                   
