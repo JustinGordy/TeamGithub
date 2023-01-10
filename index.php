@@ -21,7 +21,14 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
         </nav>
         <!-- Page content-->
         <div class="container">
+              <div class="row">
+          
+              <div class="col" id="form">
             <div class="text-center mt-5">
+                
+              <div class="card">
+            
+                <div class="container">
                 <form action="/redirect.php" method="post">
                   <label for="fname">First name:</label><br>
                   <input type="text" id="fname" name="fname"><br>
@@ -44,14 +51,24 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
                   
                     <input type="submit" name="BTN_submit" value="Submit">
               </form>
+                </div>
+                </div>
+              </div>
+              </div>
+
+                
+              <div class="col" id="info" style="padding-top:48">
               <?php
                 foreach ($json_encode as $data ) {
+             
+                  echo  "<div class='card'>";
                   echo $data['fname']."<br>";
                   echo $data['lname']."<br>";
                   echo $data['email']."<br>";
                   echo $data['number']."<br>";
-                  echo $data['know']."<br><hr>";
-
+                  echo $data['know']."<br>";
+                  echo "</div>";
+                  echo "<br>";
                 }
 
 
@@ -61,6 +78,8 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
 
 
                 ?>
+              </div>
+
             </div>
         </div>
         <!-- Bootstrap core JS-->

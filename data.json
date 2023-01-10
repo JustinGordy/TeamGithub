@@ -54,26 +54,6 @@
         "email": "",
         "number": "",
         "know": "friends"
-    },
-    {
-        "fname": "adam",
-        "lname": "mirza",
-        "email": "",
-        "number": "",
-        "know": "friends"
-    },
-    {
-        "fname": "Justin",
-        "lname": "apple",
-        "email": "",
-        "number": "",
-        "know": "friends"
-    },
-    {
-        "fname": "Justin",
-        "lname": "carly",
-        "email": "",
-        "number": "",
-        "know": "friends"
     }
+  
 ]
