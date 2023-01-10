@@ -1,12 +1,5 @@
 [
-    {
-        "fname": "fa",
-        "lname": "fa",
-        "email": "fa",
-        "number": "fa",
-        "know": "family"
-    },
-    {
+        {
         "fname": "dfghjkl",
         "lname": "poiuytrewq",
         "email": "email5",
@@ -22,30 +15,30 @@
     },
     {
         "fname": "John",
-        "lname": "Doe",
-        "email": "353461@guhsd.net",
-        "number": "12344678",
-        "know": "family"
-    },
-    {
-        "fname": "",
-        "lname": "",
-        "email": "",
-        "number": "",
-        "know": "friends"
-    },
-    {
-        "fname": "",
-        "lname": "",
-        "email": "",
-        "number": "",
-        "know": "friends"
-    },
-    {
-        "fname": "John",
-        "lname": "grrgr",
+        "lname": "Cort",
         "email": "360135@guhsd.net",
         "number": "12344678",
+        "know": "co-worker"
+    },
+    {
+        "fname": "Steve",
+        "lname": "Acorn",
+        "email": "s@s.com",
+        "number": "123546956",
+        "know": "co-worker"
+    },
+    {
+        "fname": "Bob",
+        "lname": "Zones",
+        "email": "z@b.com",
+        "number": "7894561233",
+        "know": "co-worker"
+    },
+    {
+        "fname": "todd",
+        "lname": "benrud",
+        "email": "t@b.com",
+        "number": "789456123",
         "know": "co-worker"
     }
 ]

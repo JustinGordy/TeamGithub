@@ -1,6 +1,7 @@
 <?php 
 $jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
 $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
+
 ?>
 <html lang="en">
     <head>
@@ -23,17 +24,36 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
         <div class="container">
             <div class="text-center mt-5">
                 <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead"><?php 
-              foreach ($json_encode as $data ) {
-                if($data['know']=="co-worker"){
-                  echo $data['fname']."<br>";
-                  echo $data['lname']."<br>";
-                  echo $data['email']."<br>";
-                  echo $data['number']."<br>";
-                  echo $data['know']."<br><hr>";
-                }
-              }
+                <p class="lead">
+              <?php 
+
+$lname = array_column($json_encode, 'lname');
+
+array_multisort($lname, SORT_DESC, $json_encode);
+
+
+
+                  foreach ($json_encode as $data ) {
+                    
+                    
+                    
+                    if($data['know']=="co-worker"){
+                      echo $data['fname']."<br>";
+                      echo $data['lname']."<br>";
+                      echo $data['email']."<br>";
+                      echo $data['number']."<br>";
+                      echo $data['know']."<br><hr>";
+                    }
+
+                    
+                  }
+
+// echo '<pre>';
+// var_dump($json_encode);
+// echo '</pre>';
+
                 ?>
+
                 </p>
             </div>
         </div>
