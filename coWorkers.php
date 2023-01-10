@@ -1,6 +1,8 @@
 <?php 
 $jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
 $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
+usort($json_encode, fn($a, $b) => $a['lname'] <=> $b['lname']);
+
 ?>
 <html lang="en">
     <head>
