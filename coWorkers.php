@@ -31,12 +31,13 @@ usort($json_encode, fn($a, $b) => $a['lname'] <=> $b['lname']);
                 <?php 
               foreach ($json_encode as $data ) {
                 if($data['know']=="co-worker"){
-                  echo $data['fname']."<br>";    
-                  echo $data['lname']."<br>";
-                  echo $data['email']."<br>";
-                  echo $data['number']."<br>";
-                  echo $data['know']."<br>";
-                  echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><br><hr>';                  
+                  echo "<strong>First Name:</strong> ".$data['fname']."<br>";
+                  echo "<strong>Last Name:</strong> " .$data['lname']."<br>";
+                  echo "<strong>Email:</strong> " .$data['email']."<br>";
+                  echo "<strong>Number:</strong> " .$data['number']."<br>";
+                  echo "<strong>Relationship:</strong> ".$data['know'];
+                  echo "<br>";
+                  echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><br><hr>';          
                 }
               }
                 ?>
