@@ -1,79 +1,65 @@
-[
-    {
-    "fname": "fa",
-    "lname": "fa",
-    "email": "fa",
-    "number": "fa",
-    "know": "family"
-    },
-    {
-    "fname": "dfghjkl",
-    "lname": "poiuytrewq",
-    "email": "email5",
-    "number": "agezsrh",
-    "know": "family"
-    },
-    {
-    "fname": "John",
-    "lname": "Doe",
-    "email": "353461@guhsd.net",
-    "number": "12344678",
-    "know": "family"
-    },
-    {
-    "fname": "John",
-    "lname": "Doe",
-    "email": "353461@guhsd.net",
-    "number": "12344678",
-    "know": "family"
-    },
-    {
-    "fname": "John",
-    "lname": "grrgr",
-    "email": "360135@guhsd.net",
-    "number": "12344678",
-    "know": "co-worker"
-    },
-    {
-    "fname": "Justin",
-    "lname": "Gordy",
-    "email": "349760@guhsd.net",
-    "number": "6192018453",
-    "know": "co-worker"
-    },
-    {
-    "fname": "Justin",
-    "lname": "gordy",
-    "email": "",
-    "number": "",
-    "know": "friends"
-    },
-    {
-    "fname": "todd",
-    "lname": "benrud",
-    "email": "",
-    "number": "",
-    "know": "friends"
-    },
-    {
-    "fname": "Justin",
-    "lname": "bot",
-    "email": "",
-    "number": "",
-    "know": "family"
-    },
-    {
-    "fname": "Justin",
-    "lname": "auto",
-    "email": "",
-    "number": "",
-    "know": "friends"
-    },
-    {
-    "fname": "bob",
-    "lname": "dog",
-    "email": "one@gmail",
-    "number": "12344678",
-    "know": "family"
-    }
-]
+,
+{
+"fname": "John",
+"lname": "Doe",
+"email": "353461@guhsd.net",
+"number": "12344678",
+"know": "family"
+},
+{
+"fname": "John",
+"lname": "Doe",
+"email": "353461@guhsd.net",
+"number": "12344678",
+"know": "family"
+},
+{
+"fname": "John",
+"lname": "grrgr",
+"email": "360135@guhsd.net",
+"number": "12344678",
+"know": "co-worker"
+},
+{
+"fname": "Justin",
+"lname": "Gordy",
+"email": "349760@guhsd.net",
+"number": "6192018453",
+"know": "co-worker"
+},
+{
+"fname": "Justin",
+"lname": "gordy",
+"email": "",
+"number": "",
+"know": "friends"
+},
+{
+"fname": "todd",
+"lname": "benrud",
+"email": "",
+"number": "",
+"know": "friends"
+},
+{
+"fname": "Justin",
+"lname": "bot",
+"email": "",
+"number": "",
+"know": "family"
+},
+{
+"fname": "Justin",
+"lname": "auto",
+"email": "",
+"number": "",
+"know": "friends"
+},
+{
+"fname": "bob",
+"lname": "dog",
+"email": "one@gmail",
+"number": "12344678",
+"know": "family"
+}
+
