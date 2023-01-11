@@ -1,8 +1,6 @@
 <?php 
 $jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
 $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
-usort($json_encode, fn($a, $b) => $a['lname'] <=> $b['lname']);
-
 ?>
 <html lang="en">
     <head>
@@ -22,25 +20,30 @@ usort($json_encode, fn($a, $b) => $a['lname'] <=> $b['lname']);
             <?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php'); ?>
         </nav>
         <!-- Page content-->
+    <div class="row">
+      <div class="col-md-10 offset-md-2">
         <div class="container">
             <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead"><?php 
+              <div class="card w-75">
+                <div class="card-body">
+                <?php 
               foreach ($json_encode as $data ) {
-
-                
                 if($data['know']=="family"){
-                  echo $data['fname']."<br>";
+                  echo $data['fname']."<br>";    
                   echo $data['lname']."<br>";
                   echo $data['email']."<br>";
                   echo $data['number']."<br>";
-                  echo $data['know']."<br><hr>";
+                  echo $data['know']."<br>";
+                  echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><br><hr>';                  
                 }
               }
                 ?>
-                </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
