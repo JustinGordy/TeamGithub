@@ -47,5 +47,11 @@ header('Location: /index.php');
   }else{
     //do nothing
   }
+ $_SESSION["userProfile"]["fName"]= $_POST['fname'];
+  $_SESSION["userProfile"]["lName"]= $_POST['lname'];
+  $_SESSION["userProfile"]["email"]= $_POST['email'];
+  $_SESSION["userProfile"]["number"]= $_POST['number'];
+  $_SESSION["userProfile"]["know"]= $_POST['know'];
+
 
 ?>

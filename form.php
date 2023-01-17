@@ -1,6 +1,16 @@
 <?php 
 $jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
 $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
+    foreach($json_encode as $data){
+      if ($data['id'] == $_GET['id']){
+        $fname=$data['fname'];
+        $lname=$data['lname'];
+        $email=$data['email'];
+        $number=$data['number'];
+        $know=$data['know'];
+      }
+    }
+
 ?>
 <html lang="en">
   <head>
@@ -10,17 +20,19 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <form action="/redirect.php" method="post">
+    <?php
+
+    echo'<form action="/redirect.php" method="post">
       <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
+      <input type="text" id="fname" name="fname" value="'.$fname.'"><br>
       <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname"><br>
+      <input type="text" id="lname" name="lname" value="'.$lname.'"><br>
       
        <label for="email">Email:</label><br>
-      <input type="text" id="email" name="email"><br>
+      <input type="text" id="email" name="email" value="'.$email.'"><br>
 
              <label for="number">Phone Number:</label><br>
-      <input type="text" id="number" name="number"><br>
+      <input type="text" id="number" name="number" value="'.$number.'"><br>
       
       <label for="know">How You Know Person?</label><br>
       <select id="know" name="know">
@@ -31,8 +43,8 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
       <br>
       
         <input type="submit" name="BTN_submit" value="Submit">
-    </form>
-
+    </form>';
+?>
     <hr>
 
    
