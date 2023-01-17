@@ -37,7 +37,7 @@ usort($json_encode, fn($a, $b) => $a['lname'] <=> $b['lname']);
                   echo "<strong>Number:</strong> " .$data['number']."<br>";
                   echo "<strong>Relationship:</strong> ".$data['know'];
                   echo "<br>";
-                  echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><br><hr>';          
+                  echo '<a href="/form.php?id='.$data['id'].'" class="btn btn-primary">Edit Info</a><br><hr>';          
                 }
               }
                 ?>

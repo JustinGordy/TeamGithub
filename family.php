@@ -26,6 +26,7 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
             <div class="text-center mt-5">
               <div class="card w-75">
                 <div class="card-body">
+                 
                 <?php 
               foreach ($json_encode as $data ) {
                 if($data['know']=="family"){
@@ -35,7 +36,7 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
                   echo "<strong>Number:</strong> " .$data['number']."<br>";
                   echo "<strong>Relationship:</strong> ".$data['know'];
                   echo "<br>";
-                  echo '<a href="/form.php" class="btn btn-primary">Edit Info</a><br><hr>';
+                  echo '<a href="/form.php?id='.$data['id'].'" class="btn btn-primary">Edit Info</a><br><hr>';
                 }
               }
                 ?>
