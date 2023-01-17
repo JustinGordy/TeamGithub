@@ -1,6 +1,8 @@
 <?php 
 $jsonData = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/data.json");
 $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Array
+
+
 ?>
 <html lang="en">
     <head>
@@ -60,7 +62,7 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
               <div class="col" id="info" style="padding-top:48">
               <?php
                 foreach ($json_encode as $data ) {
-             
+                      
                   echo  "<div class='card'><p>";
                   echo "<strong>First Name:</strong> ".$data['fname']."<br>";
                   echo "<strong>Last Name:</strong> " .$data['lname']."<br>";
