@@ -67,7 +67,8 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
                   echo "<strong>Email:</strong> " .$data['email']."<br>";
                   echo "<strong>Number:</strong> " .$data['number']."<br>";
                   echo "<strong>Relationship:</strong> ".$data['know'];
-                  echo "</p></div>";
+                  echo "</p>";
+                  echo '<a href="/form.php?id='.$data['id'].'" class="btn btn-primary">Edit Info</a></div>';
                   echo "<br>";
                 }
 
