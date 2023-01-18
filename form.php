@@ -22,7 +22,7 @@ $json_encode = json_decode($jsonData , TRUE); // Converts the data into a PHP Ar
   <body>
     <?php
 
-    echo'<form action="/redirect.php" method="post">
+    echo'<form action="/redirectEdit.php?id='.$_GET['id'].'" method="post">
       <label for="fname">First name:</label><br>
       <input type="text" id="fname" name="fname" value="'.$fname.'"><br>
       <label for="lname">Last name:</label><br>
